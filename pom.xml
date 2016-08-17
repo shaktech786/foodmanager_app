@@ -126,6 +126,12 @@
                 <groupId>com.github.searls</groupId>
                 <artifactId>jasmine-maven-plugin</artifactId>
                 <version>2.1</version>
+                <configuration>
+                    <jsSrcDir> src/main/webapp/resources/js </jsSrcDir>
+                    <preloadSources>
+                        <source>webjars/jquery.js</source>
+                    </preloadSources>
+                </configuration>
             </plugin>
 
             <plugin>
