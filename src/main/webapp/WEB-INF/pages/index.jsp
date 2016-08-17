@@ -2,7 +2,8 @@
 <%@ taglib prefix="c" uri="http://www.springframework.org/tags" %>
 <html>
 	<head>
-		<link rel="stylesheet" href="<c:url value='../../resources/css/index.css' />" type="text/css"/>
+		<link rel="stylesheet" href="<c:url value='../../resources/css/index.css' />" />
+        <script src="<c:url value="../../resources/js/index.js"/>"></script>
 	</head>
 
 	<body>
@@ -15,10 +16,10 @@
 			<h2>Ingredients</h2>
 			<h3>Please write the ingredients in your fridge:</h3>
 
-			<form action="/recipes" method="get">
+			<form action="/recipes" method="get" onsubmit="validateInput()">
 				<span>
 					<textarea required placeholder="bread, ham, lettuce, tomato"></textarea>
-					<button type="submit">Submit</button>
+					<button id="submit" type="submit">Submit</button>
 				</span>
 			</form>
 		</div>
