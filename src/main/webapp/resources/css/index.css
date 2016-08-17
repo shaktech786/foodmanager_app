@@ -20,6 +20,7 @@ h2, h3 {
     text-align: center;
 }
 
+
 textarea {
     display: block;
     margin-left: auto;
@@ -28,10 +29,11 @@ textarea {
     height: 50%;
     margin-bottom: 20px;
     border-radius: 5px;
+    font-size: 125%;
 }
 
 button {
-    margin-left: 700px;
     padding: 5px;
+    margin-left: 1000px;
 }
 

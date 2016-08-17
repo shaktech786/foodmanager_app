@@ -14,9 +14,12 @@
 		<div>
 			<h2>Ingredients</h2>
 			<h3>Please write the ingredients in your fridge:</h3>
-			<form>
-				<textarea placeholder="bread, ham, lettuce, tomato"></textarea>
-				<button type="submit">Submit</button>
+
+			<form action="/recipes" method="get">
+				<span>
+					<textarea required placeholder="bread, ham, lettuce, tomato"></textarea>
+					<button type="submit">Submit</button>
+				</span>
 			</form>
 		</div>
 	</body>
