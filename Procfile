@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -jar target/dependency/webapp-runner.jar --port $PORT target/springmvc_template.war
+web: java $JAVA_OPTS -jar target/dependency/webapp-runner.jar --port $PORT target/foodmanager_app.war

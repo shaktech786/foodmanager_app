@@ -1,13 +1,19 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="c" uri="http://www.springframework.org/tags" %>
 <html>
+	<head>
+		<link rel="stylesheet" href="<c:url value='../../resources/css/index.css' />" type="text/css"/>
+	</head>
+
 	<body>
-		<div>
+		<div id="header">
 			<h1>Gradumake</h1>
-			<h2>Goodbye Ramen, Hello Quinoa</h2>
+			<h2 id="tagline">Goodbye Ramen, Hello Quinoa</h2>
 		</div>
 
 		<div>
 			<h2>Ingredients</h2>
-			<h3>Please write the ingredients in your fridge.</h3>
+			<h3>Please write the ingredients in your fridge:</h3>
 			<form>
 				<textarea placeholder="bread, ham, lettuce, tomato"></textarea>
 				<button type="submit">Submit</button>
