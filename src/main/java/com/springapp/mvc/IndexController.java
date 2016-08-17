@@ -7,12 +7,9 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
 @RequestMapping("/")
-public class HelloController {
+public class IndexController {
 	@RequestMapping(method = RequestMethod.GET)
-	public String printWelcome(ModelMap model) {
-		model.addAttribute("message", "Hello world!");
-		model.addAttribute("prompt", "What's your name?");
-		model.addAttribute("name", "Shakeel");
-		return "hello";
+	public String displayIndex() {
+		return "index";
 	}
 }
