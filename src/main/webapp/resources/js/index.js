@@ -5,7 +5,7 @@ function validateInput() {
 
     var mistakes = [];
     for (var i in ingredientsList) {
-        if(isIngredientListValid(ingredients[i])) {
+        if(!ingredientsList[i].match(/^[a-zA-Z]+$/)) {
             mistakes.push(ingredientsList[i]);
         }
     }
@@ -19,7 +19,4 @@ function validateInput() {
 
 }
 
-function isIngredientListValid(ingredient) {
-    return ingredient.match(/^[a-zA-Z]+$/)
-}
 
