@@ -10,3 +10,11 @@ p {
     color: #bb9f06;
     font-weight: bold;
 }
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: blue;
+}
