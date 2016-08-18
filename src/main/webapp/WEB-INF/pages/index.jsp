@@ -16,8 +16,8 @@
 		<div>
 			<h2>Ingredients</h2>
 			<h3>Please write the ingredients in your fridge:</h3>
-
-			<form action="/" method="get" onsubmit="return validateInput()">
+			<p id="ingredient-error-message"></p>
+			<form action="/recipes" method="post" onsubmit="return validateInput()">
 				<span>
 					<textarea required placeholder="bread, ham, lettuce, tomato"></textarea>
 					<button id="submit" type="submit">Submit</button>

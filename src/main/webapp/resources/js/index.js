@@ -1,20 +1,25 @@
 function validateInput() {
     var ingredients = $('textarea').val();
     var ingredientsWithOutSpaces = ingredients.replace(/\s+/g, '');
-
     var ingredientsList = ingredientsWithOutSpaces.split(",");
+
     var mistakes = [];
     for (var i in ingredientsList) {
-        if(!ingredientsList[i].match(/[a-zA-Z]/)) {
+        if(isIngredientListValid(ingredients[i])) {
             mistakes.push(ingredientsList[i]);
         }
     }
+
     if (mistakes.length > 0) {
-        alert("The following ingredients " +
-            "are not valid: " + mistakes);
+        $('#ingredient-error-message').text("The following errors must be corrected: " + mistakes);
         return false;
+    } else {
+        return true;
     }
-    alert("Valid!");
-    return true;
+
+}
+
+function isIngredientListValid(ingredient) {
+    return ingredient.match(/^[a-zA-Z]+$/)
 }
 

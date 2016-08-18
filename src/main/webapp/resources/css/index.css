@@ -20,6 +20,13 @@ h2, h3 {
     text-align: center;
 }
 
+#ingredient-error-message {
+   color: red;
+   text-align: center;
+   font-size: 18px;
+   font-weight: bold;
+}
+
 
 textarea {
     display: block;
@@ -36,4 +43,5 @@ button {
     padding: 5px;
     margin-left: 1000px;
 }
+
 
