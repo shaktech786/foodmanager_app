@@ -1,0 +1,12 @@
+h2, p {
+    color: #095256;
+    text-align: center;
+}
+h2 {
+    font-size: 25px;
+}
+
+p {
+    color: #bb9f06;
+    font-weight: bold;
+}

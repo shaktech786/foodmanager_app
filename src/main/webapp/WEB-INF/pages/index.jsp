@@ -15,7 +15,7 @@
 			<p id="ingredient-error-message"></p>
 			<form action="/recipes" method="post" onsubmit="return validateInput()">
 				<span>
-					<textarea required placeholder="bread, ham, lettuce, tomato"></textarea>
+					<textarea name="ingredients"required placeholder="bread, ham, lettuce, tomato"></textarea>
 					<button id="submit" type="submit">Submit</button>
 				</span>
 			</form>

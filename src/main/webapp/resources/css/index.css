@@ -4,7 +4,7 @@ h2, h3 {
 }
 
 #ingredient-error-message {
-   color: #bb9f06;
+   color: red;
    text-align: center;
    font-size: 18px;
    font-weight: bold;
