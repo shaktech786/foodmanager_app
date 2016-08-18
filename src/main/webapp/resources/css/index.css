@@ -1,27 +1,10 @@
-#header {
-    background-color: #087f8c;
-}
-
-h1, #tagline {
-    color: #ffffff;
-    text-align: center;
-}
-
-h1 {
-    padding-top: 10px;
-}
-
-#tagline {
-    padding-bottom: 10px;
-}
-
 h2, h3 {
     color: #095256;
     text-align: center;
 }
 
 #ingredient-error-message {
-   color: red;
+   color: #bb9f06;
    text-align: center;
    font-size: 18px;
    font-weight: bold;
@@ -40,7 +23,9 @@ textarea {
 }
 
 button {
-    padding: 5px;
+    padding: 10px;
+    color: #095256;
+    font-weight: bold;
     margin-left: 1000px;
 }
 

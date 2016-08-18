@@ -8,11 +8,7 @@
     </head>
 
 	<body>
-		<div id="header">
-			<h1>Gradumake</h1>
-			<h2 id="tagline">Goodbye Ramen, Hello Quinoa</h2>
-		</div>
-
+		<%@ include file="partials/_header.jsp" %>
 		<div>
 			<h2>Ingredients</h2>
 			<h3>Please write the ingredients in your fridge:</h3>
