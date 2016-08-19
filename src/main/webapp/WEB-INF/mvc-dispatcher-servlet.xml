@@ -8,6 +8,19 @@
 
     <context:component-scan base-package="com.springapp.mvc"/>
 
+    <bean id="recipe" class="com.springapp.mvc.domain.Recipe">
+        <constructor-arg index="0" value="id"/>
+        <constructor-arg index="1" value="name"/>
+        <constructor-arg index="2" value="ingredients"/>
+        <constructor-arg index="3" value="description"/>
+    </bean>
+
+    <bean id="recipeService" class="com.springapp.mvc.services.RecipeService">
+        <constructor-arg value="recipeRepository"/>
+    </bean>
+
+    <bean id="recipeRepository" class="com.springapp.mvc.repository.RecipeRepository"></bean>
+
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <property name="prefix" value="/WEB-INF/pages/"/>
         <property name="suffix" value=".jsp"/>

@@ -1,15 +1,15 @@
-package com.springapp.mvc;
+package com.springapp.mvc.domain;
 
-import java.util.List;
+import org.springframework.stereotype.Component;
 
+@Component
 public class Recipe {
     private String id;
     private String name;
-    private List<String> ingredients;
+    private String ingredients;
     private String description;
 
-    public Recipe(String id, String name, List<String> ingredients, String description) {
-
+    public Recipe(String id, String name, String ingredients, String description) {
         this.id = id;
         this.name = name;
         this.ingredients = ingredients;
@@ -24,7 +24,7 @@ public class Recipe {
         return name;
     }
 
-    public List<String> getIngredients() {
+    public String getIngredients() {
         return ingredients;
     }
 

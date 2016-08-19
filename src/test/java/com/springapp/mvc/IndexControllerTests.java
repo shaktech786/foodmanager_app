@@ -1,5 +1,6 @@
 package com.springapp.mvc;
 
+import com.springapp.mvc.controllers.IndexController;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.test.context.ContextConfiguration;
