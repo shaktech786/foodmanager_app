@@ -18,3 +18,10 @@ ul {
 a {
     color: blue;
 }
+
+.recipeName {
+    text-align: center;
+    color: #5aaa95;
+    font-weight: bold;
+    font-size: 110%;
+}
